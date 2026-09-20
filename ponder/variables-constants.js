@@ -28,3 +28,15 @@ console.log(result);
 result = one + two;
 console.log(result);
 //exception to the rule, it concatinates the two values instead of adding them together. The computer will convert the number 1 to a string so that the concatenation can be completed. The result of this operation will be '12'.
+//it is going to assume a string with a plus sign will be concatenated, so it will convert the number to a string and concatenate them together. The result will be '12'.
+
+//scope: the area in which a variable is defined and can be accessed. There are two types of scope: global and local. A variable that is defined outside of a function or block is said to have global scope, and can be accessed from anywhere in the code. A variable that is defined inside a function or block is said to have local scope, and can only be accessed from within that function or block.
+let course = "CSE131"; //global scope
+if (true) {
+    let student = "Mary";
+    console.log(course);  //works just fine, course is global
+    console.log(student); //works just fine, it's being accessed within the block
+}
+console.log(course); //works fine, course is global
+console.log(student); //does not work, can't access a block variable outside the block
+                    
