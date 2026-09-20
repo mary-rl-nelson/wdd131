@@ -10,3 +10,14 @@ radius = 20;
 area = PI * radius * radius;
 
 console.log(area);
+
+// variables and constants are case sensitive 
+// cannot reassign a value to a constant after it has been declared
+// after the first assignment of constant or variable you do not need to declare it again, you can just reassign a new value to it.
+
+const one = 1;
+const two = '2';
+
+let result = one * two;
+
+console.log(result);
