@@ -1,0 +1,14 @@
+/* css selector review*/
+/*body*/
+body {
+    background-color: #7e7575;
+    font-size: 20px;
+}
+
+#content {
+    max-width: 60%;
+    border: 1px solid darkgreen;
+    margin: 0 auto;
+    /*zero is top and bottom, auto is the left and right*/
+    padding: 50px;
+}
