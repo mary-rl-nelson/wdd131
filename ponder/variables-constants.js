@@ -25,6 +25,6 @@ let result = one * two;
 
 console.log(result);
 
-result one + two;
+result = one + two;
 console.log(result);
 //exception to the rule, it concatinates the two values instead of adding them together. The computer will convert the number 1 to a string so that the concatenation can be completed. The result of this operation will be '12'.
