@@ -1,0 +1,36 @@
+
+body {
+    background-size: 100vw 100vh;
+    /* 100vw & 100vh makes it take up the hole screen both 
+    ways no matter how you stretch the screen but if it was 
+    someone's face it would make them look real weird. not the best 
+    practice. cover is a better option, repeats picture rather than stretch.*/
+    margin: 0;
+    padding: 20px;
+    transition: background-image 1s ease;
+    /* 1s ease make it a smoother transition*/
+}
+
+.container {
+    text-align: center;
+    padding: 2rem; /* is root rather than just em, standard size is 16 px so this would double the size*/
+    max-width: 600px;
+    margin: 2rem auto;
+    /*em is default font size but you can change the default font size, 2 em would give you double whatevere you set.*/
+}
+
+select {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#logo {
+    margin-top: 1rem;
+    width: 300px;
+}
+
+.content {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+          
