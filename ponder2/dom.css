@@ -56,3 +56,8 @@ img {
     list-style-type: none;
     /*removes the bullet points from the list*/
 }
+
+.background {
+    background-color: black;
+    color: white;
+}
