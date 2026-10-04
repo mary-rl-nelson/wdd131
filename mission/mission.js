@@ -12,7 +12,7 @@ function changeTheme() {
            background.style.backgroundColor = '#363737';
            background.style.color = 'white';
            logo.setAttribute('src', 'images/byui-logo-white.png');
-           document.querySelector('#content').style.border = "3px solid white";
+           document.querySelector('#content').style.border = "2px solid white";
             // code for changes to colors and logo
         } 
     else {
@@ -20,5 +20,7 @@ function changeTheme() {
         background.style.backgroundColor = "white";
         background.style.color = "black";
         logo.setAttribute('src','images/byui-logo-blue.webp');
+        document.querySelector('#content').style.border = "1px solid rgb(54, 111, 168)";
+
     }
 }   
