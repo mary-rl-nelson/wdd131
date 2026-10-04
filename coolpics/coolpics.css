@@ -1,0 +1,113 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #268af4;
+    text-align: center;
+    color: white;
+}
+
+main {
+    background-color: #d0cece;
+    color: black;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    padding-top: 1em;
+}
+
+nav {
+    margin: 0 auto;
+}
+nav a {
+    padding: 1em;
+    color: white;
+    display: none;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #616061;
+}
+
+
+.menu-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+}
+.menu-btn:hover{
+    background-color: #616061;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+}
+ 
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2em;
+    padding: 1em;
+    padding-top: 0;
+}
+
+.image {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 6px solid white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 700px) {
+    .images{
+        /* display: grid;- don't need this 
+        here because it was already declared 
+        higher up in main*/
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu-btn {
+        display: none;
+    }
+   
+    nav a {
+        display: inline;
+
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .images{
+        /* display: grid;- don't need this 
+        here because it was already declared 
+        higher up in main*/
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
