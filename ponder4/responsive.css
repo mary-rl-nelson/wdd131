@@ -96,7 +96,12 @@ footer {
     }
     nav a {
         display: inline;
+        border: none;
 
+    }
+    .hide {
+        display: inline;
+        
     }
     nav{
         text-align: right;
