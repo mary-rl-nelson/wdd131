@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Pics</title>
     <link rel="stylesheet" href="coolpics.css">
+    <script src="coolpics.js" defer></script>
 </head>
 <body>
     <div id="content">
@@ -17,7 +18,7 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </button>
-            <nav>
+            <nav class="hide">
                 <a href="#">Home</a>
                 <a href="#">People</a>
                 <a href="#">Places</a>
@@ -28,36 +29,38 @@
         <main>
             <h2>Current Work</h2>
 
-            <div class="images">
-                <div class="image">
+            <section class="images">
+                <figure class="image">
                     <img src="images/norris-sm.jpg" alt="gyser">
-                </div>
-                <div class="image">
+                </figure>
+                <figure class="image">
                     <img src="images/norris-sm.jpg" alt="gyser">
-                </div>
-                <div class="image">
+                </figure>
+                <figure class="image">
                     <img src="images/norris-sm.jpg" alt="gyser">
-                </div>
-                <div class="image">
+                </figure>
+                <figure class="image">
                     <img src="images/norris-sm.jpg" alt="gyser">
-                </div>
-                <div class="image">
+                </figure>
+                <figure class="image">
                     <img src="images/norris-sm.jpg" alt="gyser">
-                </div>
-                <div class="image">
+                </figure>
+                <figure class="image">
                     <img src="images/norris-sm.jpg" alt="gyser">
-                </div>
-                <div class="image">
+                </figure>
+                <figure class="image">
                     <img src="images/norris-sm.jpg" alt="gyser">
-                </div>
-                <div class="image">
+                </figure>
+                <figure class="image">
                     <img src="images/norris-sm.jpg" alt="gyser">
-                </div>
-                <div class="image">
-                    <img src="images/norris-sm.jpg" alt="gyser">
-                </div>
-            </div>
+                </figure>
+            </section>
         </main>
+        <dialog>
+        <!--the dialog element by default is hidden-->
+            <img>
+            <button class="close-viewer">X</button>
+        </dialog> 
         <footer>
             <p>&copy; 2026 Mary Frazier</p>
         </footer>
