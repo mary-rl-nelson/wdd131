@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket Form</title>
+    <link rel="icon" href="favicon.ico">
+    <script src="eventform.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" rel="stylesheet"> 
+    <link rel="stylesheet" href="eventform.css">
+</head>
+
+<body>
+    <main class="wrapper">
+        <h1>Event Ticket</h1>
+
+        <form class="eventForm" novalidate>
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input id="firstName" type="text" name="firstName" required>
+            </div>
+
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div class="field full" >
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email">
+            </div>
+
+            <div class="field">
+                <label for="ifStudent">Type</label>
+                <select
+                    id="ifStudent"
+                    name="ifStudent"
+                    aria-controls="studentContainer guestContainer"
+                    required
+                >
+                    <option value="">Choose one</option>
+                    <option value="student">Student</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="eventDate">Event Date</label>
+                <input id="eventDate" name="eventDate" type="date" required >
+            </div>
+
+            <div id="studentContainer" class="field full" hidden>
+                <label for="id">Student I#</label>
+                <input id="id" name="id" type="text" minlength="9" maxlength="9">
+            </div>
+
+            <div id="guestContainer" class="field full" hidden>
+                <label for="accessCode">Access Code</label>
+                <input id="accessCode" name="accessCode" type="text" >
+            </div>
+
+            <button class="full" type="submit">Create Ticket</button>
+
+        </form>
+
+        <section id="output" aria-live="polite"></section>
+
+    </main>
+
+</body>
+</html>
