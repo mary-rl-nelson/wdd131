@@ -3,6 +3,14 @@
     font-family: Palatino Linotype, sans-serif;
     background: #f0f4f8;
   }
+  
+  .container {
+    text-align: center;
+    padding: 2rem; /* is root rather than just em, standard size is 16 px so this would double the size*/
+    max-width: 600px;
+    margin: 2rem auto;
+    /*em is default font size but you can change the default font size, 2 em would give you double whatevere you set.*/
+    }
 
   h2 {
     margin: 10px 15px 7px 35px;
@@ -18,7 +26,7 @@
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.9);
     width: 400px; 
-    margin: 100px auto;
+    margin: 50px auto;
   }
 
   .image{

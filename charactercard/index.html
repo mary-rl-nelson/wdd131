@@ -37,10 +37,11 @@
     <script src="character.js" defer></script>
 </head>
 <body>
-    <main>
-        <label for="character-select"></label>
+    <main class="container">
+        <h1>Character Card</h1>
+        <label for="character-select">Choose a character:</label>
         <select id="character-select">
-            <option value="">-- Select Character--</option>
+            <option value="">-- Select --</option>
             <option value="veywrath">Veywrath</option>
             <option value="pipkin">Pipkin</option>
             <option value="korrath">Korrath</option>
@@ -51,7 +52,7 @@
 
         <div class="card">
             <img class="image" alt="Character Image" src="images/default.png " width="600" height="600">
-            <h1 class="characterName">Choose Your Character</h1>
+            <h1 class="characterName"></h1>
             <h2>Statistics</h2>
             <section class="stats">
                 <p class="stat">Strength: <span class="strength"></span></p>
