@@ -16,10 +16,57 @@ max-width: 100%;
 
 .main-nav {
 list-style-type: none;
+display: flex;
+gap: 1em;
+flex-direction: column;
+}
+
+
+.media-card {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
 }
 
 hr{
 margin-top: 50px;
+}
+
+
+/* The greater sign, means all(*) direct children */
+.gallery > * {
+    flex: 1 1 460px;
+    /* flex: grow(will grow if needs to, 
+    shrink(will shrink if needs to), 
+    space(default starting*/
+}
+
+
+
+@media screen and (min-width: 550px){
+    .main-nav {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .media-card {
+        flex-direction: row;
+    }
+    .media-card-image {
+        flex: 0 1 250px;
+    }
+    .media-card-image {
+        flex: 0 1 250px;
+    }
+    .media-card-content {
+        flex: 0 1 60ch;
+    }
 }
 
 
