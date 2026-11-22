@@ -4,15 +4,15 @@
     
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Your Title">
-    <meta property="og:description" content="Your Description">
-    <meta property="og:url" content="Your URL">
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:description" content="Search and find recipes.">
+    <meta property="og:url" content="https://mary-rl-nelson.github.io/wdd131/recipes/index.html">
     <meta property="og:image" content="social-preview-image.png">
 
     <!-- X Card -->
     <meta name="twitter:card" content="Social Preview Image">
-    <meta name="twitter:title" content="Your Title">
-    <meta name="twitter:description" content="Your Description">
+    <meta name="twitter:title" content="Recipe Book">
+    <meta name="twitter:description" content="Search and find recipes.">
     <meta name="twitter:image" content="social-preview-image.png">
 
     <!-- One favicon (ICO works everywhere) -->
@@ -30,6 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script src="recipe.js" defer></script>
 </head>
 <body>
     <header>
@@ -39,34 +40,14 @@
     <main>
         <div class="search-container">
             <input type="text" name="searchfield" id="searchfield" placeholder="Find a recipe">
-            <img src="images/search.svg" alt="search icon" class="search-icon">
+
+            <button type="button" class="search-icon"aria-label="Search recipes">
+                <img src="images/search.svg" alt="search icon">
+            </button>
         </div>
         <hr>
-        <section class="recipe-card">
-            <div class="card-image">
-                <img src="images/apple-crisp.jpg" alt="apple crisp photo">
-            </div>
-            <div class="card-content">
-                <label class="food-type">dessert</label>
-                <h3 class="recipe-name">Apple Crisp</h3>
-                
-                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-
-                <p class="description">
-                    This apple crisp recipe is simple yet delicious fall dessert
-                    that's great served warm with vanilla icecream.
-                </p>
-                                
-            </div>
-            
-
-        </section>
+        
+        <div id="recipe-container"></div>
 
     </main>
                             
